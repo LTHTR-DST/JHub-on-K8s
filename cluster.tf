@@ -1,13 +1,13 @@
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
+resource "azurerm_resource_group" "Resource_Group" {
+  name     = "rg_JHubAKS_dev_we_001"
   location = "West Europe"
 }
 
-resource "azurerm_kubernetes_cluster" "example" {
-  name                = "example-aks1"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
-  dns_prefix          = "exampleaks1"
+resource "azurerm_kubernetes_cluster" "cluster" {
+  name                = "aks_JHub_dev_we-001"
+  location            = azurerm_resource_group.Resource_Group.location
+  resource_group_name = azurerm_resource_group.Resource_Group.name
+  dns_prefix          = "demoaksjhub001"
 
   default_node_pool {
     name       = "default"
