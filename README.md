@@ -5,4 +5,4 @@ The concept here is to deploy a generic instance of Azure Kubernetes Service, wi
 
 This repo is to maintain the base terraform code for the cluster and the Jupyterhub deployment. The Helm charts can be stored in here, or possibly externally.
 
-v.01 basic deployment of AKS
+v 0.1 basic deployment of AKS + setting up TF deployment from Git Actions with a Service Principle as a parameter to the Workflow (hopefully)
