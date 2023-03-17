@@ -1,3 +1,9 @@
+variable "location" {
+    type = string
+    description = "region location"
+    default = "West Europe"
+}
+
 variable "location_id" {
     type = string
     description = "region location code id"
@@ -22,7 +28,7 @@ variable "kubernetes_cluster_name" {
     default = "aks-JHubDemo_dev_we_001"
   }
 
-variable "DNs_Prefix" {
+variable "DNS_Prefix" {
       type = string
       description = "DNS Prefix for cluster access"
       default = "demoaksjhub001"
