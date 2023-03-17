@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "Resource_Group" {
   name     = var.resource_group_name
-  location = "West Europe"
+  location = var.location
 }
 
 resource "azurerm_kubernetes_cluster" "cluster" {
